@@ -5,13 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<div id="wrapper">
 <form method="POST">
     <form method="POST">
         <div class="container">
             <label><b>Введен неправильный логин или пароль</b></label>
         </div>
+		<div class="container">
+        <span> <a class="reg" href="/registration">Назад к авторизации</a></span>
+    </div>
     </form>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/authBad.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/regBad.css') }}">
+</div>
 </body>
 </html>
