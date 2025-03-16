@@ -1,12 +1,24 @@
+#wrapper {
+	min-height: 800px;
+	background: #000000;
+	background-image: url("lapiFon.png");
+
 form {
-    font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
-    border: 1px solid black;/*Цвет, размер и тип границы */
-    color: #777991;/*Цвет label */
-    width: 25%; /*Ширина формы */
+    font: 18px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+    border: 1px solid white;/*Цвет, размер и тип границы */
+    color:  #ffffff;/*Цвет label */
+    width: 40%; /*Ширина формы */
+	padding-top: 50px;
     margin-right: auto; /*Положение формы */
     margin-left: auto; /*Положение формы */
     text-align: center; /*Центровка текста*/
 }
+
+.reg{
+	font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+	color: #ffffff;
+}
+
 .container {
     padding: 30px; /*Размер внутренних отступов контейнера*/
 }

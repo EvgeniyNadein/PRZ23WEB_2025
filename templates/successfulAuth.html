@@ -5,12 +5,17 @@
     <title>Title</title>
 </head>
 <body>
+<div id="wrapper">
 <form method="POST">
     <div class="container">
         <label><b>Вы успешно авторизовались</b></label>
     </div>
+	<div class="container">
+        <span> <a class="reg" href="/mainpage">На главную</a></span>
+    </div>
 </form>
 
 <link rel="stylesheet" href="{{ url_for('static', filename= 'css/successfulAuth.css') }}">
+</div>
 </body>
 </html>
