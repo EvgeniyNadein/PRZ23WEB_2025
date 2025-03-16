@@ -1,7 +1,7 @@
 #wrapper {
 	min-height: 800px;
 	background: #000000;
-	background-image: url("lapiFon.png");
+	background-image: url("static/css/images/lapiFon.png");
 
 form {
     font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
