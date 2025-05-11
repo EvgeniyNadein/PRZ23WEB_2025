@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>This is a training version of the online petshop</title>
-		<link rel="stylesheet" href="{{ url_for('static', filename= 'css/stylesMaimPage.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename= 'css/feed.css') }}">
 	</head>
 	<body>
 	<div id="wrapper">
@@ -22,7 +22,7 @@
         </div>
         <a id="2_submenu" href="#">Для собак</a>
         <div class="sub-submenu_2">
-            <a href="/feedpage">Корма</a>
+            <a href="#">Корма</a>
             <a href="#">Лакомства</a>
 			<a href="#">Миски и стойки</a>
 			<a href="#">Намордники</a>
@@ -55,25 +55,73 @@
 			</div>
 
 			<div id="content">
-				<div id="main_image">
-
-					<div id="image"></div>
-
-					<div id="main_image_text">
-						<div>
-							<h2>Оформи подписку на корм <br/> для питомца</h2>
-							<p>
-							- экономия до 30%
-							</p>
-							<p>
-							- Доставка до двери
-							</p>
-						</div>
-						<div id="batton_shop_now">
-							<a href="#">Оформить подписку</a>
-						</div>
+			<div id="trending_products">
+					<div>
+						<h2>Корма</h2>
 					</div>
 				</div>
+				<div class="trending_products_cards">
+					<div class="card">
+						<a href="#" >
+							<div id="elem_1_1"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Pro balance</h3>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="card">
+						<a href="#">
+							<div id="elem_2_1"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Vivere</h3>
+							</div>
+						</a>
+					</div>
+
+					 <div class="card">
+						 <a href="#">
+							<div id="elem_3_1"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Chicopee</h3>
+							</div>
+						</a>
+					 </div>
+				</div>
+
+				<div class="trending_products_cards">
+					<div class="card">
+						<a href="#" >
+							<div id="elem_1_2"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Happy Dog</h3>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="card">
+						<a href="#">
+							<div id="elem_2_2"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Best dinner</h3>
+							</div>
+						</a>
+					</div>
+
+					 <div class="card">
+						 <a href="#">
+							<div id="elem_3_2"></div>
+							<div class="card__content">
+								<h3 class="card__content-title">Meglium</h3>
+							</div>
+						</a>
+					 </div>
+				</div>
+
+				<div class="decor_line"></div>
+
 				<div id="trending_products">
 					<div>
 						<h2>Хиты продаж</h2>
@@ -318,70 +366,38 @@
 			</div>
 
 
+   <script>
+			function openPopup() {
+		  var popup = document.querySelector('.popup');
+		  popup.style.display = 'block';
+		}
+		function closePopup() {
+		  var popup = document.querySelector('.popup');
+		  popup.style.display = 'none';
+		}
+	</script>
 
-<!--	 <button onclick="openPopup()">CALCULATOR</button>-->
-
-<!--			 <div id="calculator" class="popup">-->
-<!--        <input type="text" id="display" disabled>-->
-<!--        <br>-->
-<!--        <button onclick="addToDisplay('7')">7</button>-->
-<!--        <button onclick="addToDisplay('8')">8</button>-->
-<!--        <button onclick="addToDisplay('9')">9</button>-->
-<!--        <button onclick="addToDisplay('+')">+</button>-->
-<!--        <br>-->
-<!--        <button onclick="addToDisplay('4')">4</button>-->
-<!--        <button onclick="addToDisplay('5')">5</button>-->
-<!--        <button onclick="addToDisplay('6')">6</button>-->
-<!--        <button onclick="addToDisplay('-')">-</button>-->
-<!--        <br>-->
-<!--        <button onclick="addToDisplay('1')">1</button>-->
-<!--        <button onclick="addToDisplay('2')">2</button>-->
-<!--        <button onclick="addToDisplay('3')">3</button>-->
-<!--        <button onclick="addToDisplay('*')">*</button>-->
-<!--        <br>-->
-<!--        <button onclick="addToDisplay('0')">0</button>-->
-<!--        <button onclick="clearDisplay()">C</button>-->
-<!--        <button onclick="calculateResult()">=</button>-->
-<!--        <button onclick="addToDisplay('/')">/</button>-->
-
-<!--		<button  onclick="closePopup()" id="close">Закрыть</button>-->
-<!--    </div>-->
-
-
-
-
-<!--   <script>-->
-<!--			function openPopup() {-->
-<!--		  var popup = document.querySelector('.popup');-->
-<!--		  popup.style.display = 'block';-->
-<!--		}-->
-<!--		function closePopup() {-->
-<!--		  var popup = document.querySelector('.popup');-->
-<!--		  popup.style.display = 'none';-->
-<!--		}-->
-<!--	</script>-->
-
-<!--	  <script>-->
-<!--        // Эта функция используется для добавления конкретного "value" (значения) на дисплей.-->
-<!--        function addToDisplay(value) {-->
-<!--            document.getElementById('display').value += value;-->
-<!--        }-->
-<!--        // Эта функция очищает дисплей, устанавливая его значение в пустую строку.-->
-<!--        function clearDisplay() {-->
-<!--            document.getElementById('display').value = '';-->
-<!--        }-->
-<!--        // Эта функция вычисляет результат выражения на дисплее с помощью функции 'eval'.-->
-<!--        // Она обрабатывает ошибки и выводит сообщение 'Error', если выражение недопустимо.-->
-<!--        function calculateResult() {-->
-<!--            try {-->
-<!--       // Получение результата выражения и вывод результата на дисплей.-->
-<!--                document.getElementById('display').value = eval(document.getElementById('display').value);-->
-<!--            } catch (error) {-->
-<!--       // Если в процессе вычисления возникла ошибка, на дисплее отобразится сообщение 'Error'.-->
-<!--                document.getElementById('display').value = 'Error';-->
-<!--            }-->
-<!--        }-->
-<!--    </script>-->
+	  <script>
+        // Эта функция используется для добавления конкретного "value" (значения) на дисплей.
+        function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+        // Эта функция очищает дисплей, устанавливая его значение в пустую строку.
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+        // Эта функция вычисляет результат выражения на дисплее с помощью функции 'eval'.
+        // Она обрабатывает ошибки и выводит сообщение 'Error', если выражение недопустимо.
+        function calculateResult() {
+            try {
+       // Получение результата выражения и вывод результата на дисплей.
+                document.getElementById('display').value = eval(document.getElementById('display').value);
+            } catch (error) {
+       // Если в процессе вычисления возникла ошибка, на дисплее отобразится сообщение 'Error'.
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
 
 	</div>
 

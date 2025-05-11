@@ -1,0 +1,536 @@
+#wrapper {
+	background: #000000;
+	background-image: url("/static/css/images/lapiFon.png");
+
+
+#menu {
+	display: flex;
+	justify-content: center;
+	background: #000000;
+}
+
+.div_menu {
+	display: flex;
+    text-align: center;
+}
+
+.menu {
+	margin-right: 25px;
+	margin-top: 5px;
+    padding: 10px;
+	height: auto;
+    border: none;
+	font: 16px Arial;
+	text-decoration: none;
+	color: #4e5a4f;
+	background-color: white;
+}
+
+#logo{
+background-image: url("/static/css/images/logo.png");
+	width: 150px;
+	height: 39px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+margin-right: 48%;
+margin-top: 5px;
+}
+
+a.authorization {
+	margin-right: 5px;
+	padding: 10px;
+	margin-top: 5px;
+	font: 16px Arial;
+	text-decoration: none;
+	color: #4e5a4f;
+	background-color: white;
+}
+
+
+.search_block form {
+	  display: flex;
+	margin-right: 25px;
+}
+input.search {
+  border: 0;
+  font: 16px Arial;
+  color: #D7D5D8;
+  background-color: #FFFFFF;
+  margin-right: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}
+input.submit {
+  background: #C9ED53;
+  border: 0;
+  font: 16px Arial;
+  color: #000000;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+::placeholder {
+  color: #c3c1c1;
+}
+
+input.submit:hover {
+	color: white;
+	background-color: #000000;
+}
+
+#menu a:hover, #menu a.active {
+	color: white;
+	background-color: #000000;
+}
+
+#main_image {
+	display: flex;
+	align-items: center;
+	margin: 1% auto;
+}
+
+#image {
+	background-image: url("main.png");
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: 0.9;
+	 width: 100%;
+	height: 650px;
+	background-size: cover;
+	background-position: center 1%;
+	background-repeat: no-repeat;
+}
+#image::after {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с 50% непрозрачностью */
+}
+
+#main_image_text {
+	display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 15%;
+  left: 5%;
+  align-items: flex-start;
+  margin-left: 2%;
+    }
+
+#main_image_text div {
+	margin: 5% auto;
+}
+
+#main_image_text h2 {
+	color: #fafafa;
+    font: 60px Arial;
+	text-align: center;
+	font-weight: bold;
+	padding:  1px;
+	margin: 5% auto;
+    }
+
+#main_image_text p {
+	text-align: left;
+	color: #fafafa;
+    font: 30px Arial;
+	padding:  1px;
+	margin: 3% auto;
+    }
+
+#batton_shop_now a:hover{
+	color: white;
+	background-color: #000000;
+}
+
+#batton_shop_now a {
+	padding: 5% 100px 5% 100px;
+	font: 15px Arial;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	background-color: #C9ED53;
+	padding: 10% auto;
+}
+
+#trending_products h2, #popular_products h2, #blog_title h2 {
+	text-align: center;
+	color: #ffffff;
+    font: 24px Arial;
+	font-weight: bold;
+	margin-top: 2%;
+	margin-bottom: 1%;
+    }
+
+.trending_products_cards {
+	display: flex;
+	justify-content: center;
+}
+.card {
+  width: 350px;
+  margin: 1%;
+}
+
+#batton_shop:hover{
+	color: white;
+	background-color: #000000;
+}
+
+#batton_shop{
+	padding: 5%;
+	font: 16px Arial;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	background-color: #C9ED53;
+	vertical-align: middle;
+	width: 40%;
+	text-align: center;
+	margin: auto;
+}
+
+#elem_1_1 {
+	background-image: url("/static/css/images/Rec1.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_2_1 {
+	background-image: url("/static/css/images/Rec2.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#elem_3_1 {
+	background-image: url("/static/css/images/Rec3.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#elem_1_2 {
+	background-image: url("/static/css/images/Rec4.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_2_2 {
+	background-image: url("/static/css/images/Rec5.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#elem_3_2 {
+	background-image: url("/static/css/images/Rec6.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+#elem_1 {
+	background-image: url("/static/css/images/card1.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_2 {
+	background-image: url("/static/css/images/card2.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#elem_3 {
+	background-image: url("/static/css/images/card3.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_4 {
+	background-image: url("/static/css/images/card4.png");
+	background-repeat: no-repeat;
+	 width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_5 {
+	background-image: url("/static/css/images/card5.png");
+	background-repeat: no-repeat;
+	 width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#elem_6 {
+	background-image: url("/static/css/images/card6.png");
+	background-repeat: no-repeat;
+	 width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.card__content-title {
+	text-align: center;
+	color: #ffffff;
+    font: 18px Arial;
+	font-style: italic;
+	line-height: 1.5em;
+	margin-top: 4%;
+	margin-bottom: 1%;
+    }
+
+.card__content-description {
+	text-align: center;
+	color: #ffffff;
+    font: 16px Arial;
+	font-style: italic;
+	line-height: 150%;
+	padding:  1px;
+	margin-top: 2%;
+	margin-bottom: 10%;
+    }
+
+.card a{
+	text-decoration: none;
+}
+
+.card:hover{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4e5a4f;
+	-webkit-box-shadow: 0px 12px 23px 8px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 12px 23px 8px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 12px 23px 8px rgba(34, 60, 80, 0.2);
+}
+
+.decor_line{
+	width: 90%;
+	height: 0px;
+	border-top: 1px solid #dbdbdb;
+	margin: 50px;
+}
+
+.registration {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	background-color: #1A1A1A;
+	opacity: 0.8;
+	margin-left: auto;
+    margin-right: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.registration_text {
+	width: 200px;
+	padding: 10px;
+	color: #ffffff;
+    font: 16px Arial;
+	line-height: 170%;
+	padding:  1px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+.signUp_block {
+	display: flex;
+	justify-content: center;
+
+}
+
+.signUp_block > form{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+input.signUp {
+  width: 300px;
+  border: 0;
+  font: 15px Arial;
+  color: #4e5a4f;
+  background-color: #ffffff;
+  margin-right: 5px;
+  padding: 14px;
+}
+input.button_signUp {
+  background: #C9ED53;
+  border: 0;
+  font: 16px Arial;
+  color: #000000;
+  padding: 14px;
+}
+
+input.button_signUp:hover {
+	color: white;
+	background-color: #000000;
+}
+
+div.footer_content{
+	display: flex;
+	justify-content: center;
+}
+
+#footer_content_1, #footer_content_2, #footer_content_3 {
+	width: 200px;
+	margin-right: 5%;
+	color: #9a9898;
+    font: 16px Arial;
+	line-height: 170%;
+	padding:  1px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#footer_content_4 {
+	width: 200px;
+	color: #9a9898;
+    font: 16px Arial;
+	line-height: 170%;
+	padding:  1px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+ #footer_content_1 p, #footer_content_2 p, #footer_content_3 p, #footer_content_4 p{
+	margin-top: 5px;
+}
+
+ #footer_content_1 h4, #footer_content_2 h4, #footer_content_3 h4, #footer_content_4 h4{
+	margin-bottom: 5px;
+}
+
+.info {
+	margin-right: 5%;
+	color: #9a9898;
+    font: 16px Arial;
+	line-height: 170%;
+	padding:  1px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.signature {
+	text-align: center;
+	color: #9a9898;
+    font: 14px Arial;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.catalog {
+    position: relative;
+    display: inline-block;
+	margin-right: 25px;
+}
+
+.catalog-button {
+    background-color: #C9ED53;
+    color: #000000;
+	font: 16px Arial;
+	margin-top: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sub-submenu_1, .sub-submenu_2, .sub-submenu_3 {
+    display: none; /* Скрываем вложенное подменю по умолчанию */
+    position: absolute; /* Позволяет разместить вложенное подменю */
+    left: 100%; /* Сдвигаем вправо */
+    top: 0; /* Выравниваем по верхнему краю */
+	background-color: white;
+	min-height: 160px;
+	min-width: 160px;
+
+}
+
+.catalog-dropdown a {
+    color: #4e5a4f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.catalog:hover .catalog-dropdown {
+    display: block;
+}
+
+.catalog-dropdown a:hover + .sub-submenu_1 {
+    display: block; /* Показываем подменю при наведении на Товар 1 */
+}
+
+.catalog-dropdown a:hover + .sub-submenu_2 {
+    display: block; /* Показываем подменю при наведении на Товар 2 */
+}
+
+.catalog-dropdown a:hover + .sub-submenu_3 {
+    display: block; /* Показываем подменю при наведении на Товар 3 */
+}
+
+.sub-submenu_1:hover, .sub-submenu_2:hover, .sub-submenu_3:hover {
+	display: block;
+}
+
+/* Чтобы подменю оставалось видимым при наведении на родительский элемент
+.catalog-dropdown:hover .sub-submenu_1,
+.catalog-dropdown:hover .sub-submenu_2,
+.catalog-dropdown:hover .sub-submenu_3 {
+    display: none; /* Убираем лишний показ подменю */*/
+}

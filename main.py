@@ -8,6 +8,9 @@ app = Flask(__name__)
 def mainpage():
     return render_template('mainpage.html')
 
+@app.route("/feedpage")
+def feedpage():
+    return render_template('feedPage.html')
 
 @app.route('/authorization', methods=['GET', 'POST'])
 def form_authorization():
